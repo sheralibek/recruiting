@@ -1,0 +1,622 @@
+{
+	"info": {
+		"_postman_id": "c6aa1f28-5d90-4772-baad-dc735d776134",
+		"name": "Agro",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Employer",
+			"item": [
+				{
+					"name": "Get Resumes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/get-resumes",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"get-resumes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show Resume",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/resume/2",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"resume",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Vacancy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "position_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "name",
+									"value": "edfssdfgsdg",
+									"type": "default"
+								},
+								{
+									"key": "cost",
+									"value": "222222",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "fsdsfsfgsdfg",
+									"type": "default"
+								},
+								{
+									"key": "skill_ids[0]",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "skill_ids[1]",
+									"value": "2",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/create-vacancy",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"create-vacancy"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Vacancy",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "position_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "name",
+									"value": "12345",
+									"type": "default"
+								},
+								{
+									"key": "cost",
+									"value": "222222",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "fsdsfsfgsdfg",
+									"type": "default"
+								},
+								{
+									"key": "skill_ids[0]",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "skill_ids[1]",
+									"value": "2",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/update-vacancy/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"update-vacancy",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Check Request",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "status",
+									"value": "true",
+									"description": "boolean",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/check-request/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"check-request",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Vacancy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "position_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "name",
+									"value": "edfssdfgsdg",
+									"type": "default"
+								},
+								{
+									"key": "cost",
+									"value": "222222",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "fsdsfsfgsdfg",
+									"type": "default"
+								},
+								{
+									"key": "skill_ids[0]",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "skill_ids[1]",
+									"value": "2",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/delete-vacancy/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"delete-vacancy",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "2|cv9alwBqKUXQi9iObcT6Mul4qrlexyG2TUXnqXCQ",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Job Seeker",
+			"item": [
+				{
+					"name": "Get Vacancies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/get-vacancies",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"get-vacancies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Resume",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "position_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "name",
+									"value": "edfssdfgsdg",
+									"type": "default"
+								},
+								{
+									"key": "cost",
+									"value": "222222",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "fsdsfsfgsdfg",
+									"type": "default"
+								},
+								{
+									"key": "skill_ids[0]",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "skill_ids[1]",
+									"value": "2",
+									"type": "default"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/Users/sherali/Downloads/photo_2022-11-03 11.42.02.jpeg"
+								},
+								{
+									"key": "all_files[0]",
+									"type": "file",
+									"src": "/Users/sherali/Downloads/Questions for Candidate.docx"
+								},
+								{
+									"key": "work_experience",
+									"value": "12",
+									"type": "default"
+								},
+								{
+									"key": "languages[0]",
+									"value": "English",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/create-resume",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"create-resume"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Resume",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "position_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "name",
+									"value": "edfssdfgsdg",
+									"type": "default"
+								},
+								{
+									"key": "cost",
+									"value": "222222",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "fsdsfsfgsdfg",
+									"type": "default"
+								},
+								{
+									"key": "skill_ids[0]",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "skill_ids[1]",
+									"value": "2",
+									"type": "default"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/Users/sherali/Downloads/photo_2022-11-03 11.42.02.jpeg"
+								},
+								{
+									"key": "all_files[0]",
+									"type": "file",
+									"src": "/Users/sherali/Downloads/Questions for Candidate.docx"
+								},
+								{
+									"key": "work_experience",
+									"value": "12",
+									"type": "default"
+								},
+								{
+									"key": "languages[0]",
+									"value": "English",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/update-resume/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"update-resume",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Send Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "resume_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "vacancy_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "comment",
+									"value": "vdsfsdfs",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/send-request",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"send-request"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Resume",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "position_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "name",
+									"value": "edfssdfgsdg",
+									"type": "default"
+								},
+								{
+									"key": "cost",
+									"value": "222222",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "fsdsfsfgsdfg",
+									"type": "default"
+								},
+								{
+									"key": "skill_ids[0]",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "skill_ids[1]",
+									"value": "2",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/delete-resume/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"delete-resume",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "1|HZZojabAgMgBZGq67DEIkHoHoNjpSbAVQqu22Byz",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "job-seeker@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "job-seeker",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/login",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "2|3PlSyIOXgiXAVKsQAZKoOnZMgBNNI4lV584qrtKy",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://127.0.0.1:8001/api",
+			"type": "default"
+		}
+	]
+}
