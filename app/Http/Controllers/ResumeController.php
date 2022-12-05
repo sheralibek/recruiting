@@ -7,7 +7,6 @@ use App\Repositories\ResumeRepository;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\Validator;
-use function GuzzleHttp\Promise\all;
 
 class ResumeController extends Controller
 {
