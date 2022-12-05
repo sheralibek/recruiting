@@ -98,7 +98,7 @@
 				{
 					"name": "Update Vacancy",
 					"request": {
-						"method": "PUT",
+						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "formdata",
@@ -151,7 +151,7 @@
 				{
 					"name": "Check Request",
 					"request": {
-						"method": "PUT",
+						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "formdata",
@@ -357,7 +357,7 @@
 				{
 					"name": "Update Resume",
 					"request": {
-						"method": "PUT",
+						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "formdata",
@@ -505,13 +505,13 @@
 							]
 						},
 						"url": {
-							"raw": "{{base_url}}/delete-resume/1",
+							"raw": "{{base_url}}/delete-resume/2",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
 								"delete-resume",
-								"1"
+								"2"
 							]
 						}
 					},
@@ -523,7 +523,7 @@
 				"bearer": [
 					{
 						"key": "token",
-						"value": "1|HZZojabAgMgBZGq67DEIkHoHoNjpSbAVQqu22Byz",
+						"value": "3|dgDDxDSGr3LklkGyK8gw8vgJIAhkKbstekIbdkXV",
 						"type": "string"
 					}
 				]
